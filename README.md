@@ -1,4 +1,4 @@
 # memorygame
 
-Here is my The office themed memeory game. 
-Live: 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
+Here is my The office themed memory game. 
+Live: https://esmanerdem.github.io/memorygame/
