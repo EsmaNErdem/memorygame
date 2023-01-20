@@ -1,0 +1,184 @@
+body{
+    margin: 0;
+    background-color: rgba(200,199,204);
+    font-family: 'Noto Serif Toto', serif;
+    
+  }
+  
+  
+  #start {
+    background-image: url(https://tldv-wordpress.s3.us-east-2.amazonaws.com/media/20211112094403/The-office-funny-zoom-background.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    align-items: center;
+    justify-content: center;                      
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  #start.playing {
+    margin-top: -105vh;
+    transition: margin-top 1s;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    font-weight: 900;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    padding: 10px;
+  }
+  
+  .btn {
+    background-color: black;
+    padding: 20px;
+    width: 30%;
+    color: white;
+    font-size: 2rem;
+    border: 5px solid white;
+    border-radius: 10px;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+  }
+  
+  .wrapper {
+    width: 75%;
+    padding-bottom: 2px;
+    position: relative;
+    margin: 1rem auto;
+  }
+  
+  .wrapper:hover {
+    cursor: pointer;
+  }
+  
+  .row {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .game-card {
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+  }
+  
+  .game-card.flipped {
+    transform: rotateY( 180deg );
+    transition: transform 1s;
+  }
+  
+  .score {
+    width: 75%;
+    height: 100%;
+    position: absolute;
+  }
+  
+  .game-card.flipped {
+    transform: rotateY( 180deg );
+  }
+  
+  .front,
+  .back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 2px solid black;
+    overflow: hidden;
+  }
+  
+  .front {
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/88f617e9-99b1-4535-a743-5079afbda56b/d2xw4hb-687eebcd-078a-4f4e-85ce-45a97e18408c.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg4ZjYxN2U5LTk5YjEtNDUzNS1hNzQzLTUwNzlhZmJkYTU2YlwvZDJ4dzRoYi02ODdlZWJjZC0wNzhhLTRmNGUtODVjZS00NWE5N2UxODQwOGMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.KX3uaTij6vGUH2C_M2NFa9TYWkiI7bPcShuaQLBsmC8);
+    background-size: cover;              
+    background-repeat:   no-repeat;
+    background-position: center center;  
+  }
+  
+  .back {
+    transform: rotateY( 180deg );
+   
+  }
+  
+  .back img{
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  #scoreboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  #end {
+    display: none;
+  }
+  
+  #end.game-over {
+    display: flex;
+    position: absolute;
+    background-color: rgba(0,0,0,0.75);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    justify-content: space-around;
+    text-align: center;
+  }
+  
+  .endImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+  
+  a {
+    font-size: 2rem;
+    color: white;
+  }
+  
+  
+  
+  @media (max-width: 992px) {
+    .wrapper {
+      width: 100%;
+      padding-bottom: 10px;
+  
+    }
+    .row {
+      width: 100%;
+    }
+  }
+  
+  
