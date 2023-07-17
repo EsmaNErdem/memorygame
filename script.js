@@ -42,6 +42,7 @@ const backPics = [
 if(savedScore){
   bestscore.innerText = savedScore;
 }
+
 startButton.addEventListener('click', function(){
   start.classList.add("playing");
   currentScore = 0; 
@@ -127,6 +128,7 @@ function handleCardClick(e) {
 
 function endGame(){
   finalScore.innerText = currentScore;
+  localStorage.setItem('score',currentScore);
   
   if (currentScore < savedScore){
     finalScore.innerText = currentScore + ' (NEW BEST SCORE)';
