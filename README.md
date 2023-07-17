@@ -1,5 +1,7 @@
 # Memory Game
 
+Live: https://esmanerdem.github.io/memorygame/
+
 This project is a browser-based memory game implemented using HTML, CSS, and JavaScript. The goal of the game is to match pairs of cards by flipping them over and remembering their positions. 
 
 ## Technologies Used
@@ -34,7 +36,7 @@ This project is a browser-based memory game implemented using HTML, CSS, and Jav
 
 To run the game locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/memory-game.git`
+1. Clone the repository: `git clone https://github.com/EsmaNErdem/memory-game.git`
 2. Navigate to the project directory: `cd memory-game`
 3. Open the index.html file in your preferred web browser.
 
@@ -42,4 +44,3 @@ To run the game locally, follow these steps:
 
 Contributions are welcome! If you have any ideas, suggestions, or improvements, please feel free to submit a pull request.
 
-Live: https://esmanerdem.github.io/memorygame/
